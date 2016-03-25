@@ -17,8 +17,11 @@ def update_domain(domain, status):
         '$push': {'history': {'status': status, 'date': datetime.now()}}
     }, upsert=True)
 
-    if operation['err']:
-        logger.error('Update error: %s' + operation['error'])
+    if 'writeConcernError' in operation:
+        logger.error('Update error: %s' + operation['writeConcernError']['errmsg'])
+
+    elif 'writeError' in operation:
+        logger.error('Update error: %s' + operation['writeError']['errmsg'])
 
     else:
         logger.debug('Update success')

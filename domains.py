@@ -6,7 +6,9 @@ from time import sleep
 import logging
 
 config = SafeConfigParser()
+secrets = SafeConfigParser()
 config.read('config.ini')
+secrets.read('secrets.ini')
 logger = logging.getLogger(__name__)
 
 class NetworkError(RuntimeError):
@@ -41,17 +43,20 @@ def bundle_domains(domains):
 
 def status(domains):
     logger.info('Requesting Domainr "status" of %s domains', len(domains))
-    base = "https://api.domainr.com/v2/"
+    base = "https://domainr.p.mashape.com/v2/"
 
     payload = {
-        'client_id': config.get('domainr', 'client_id'),
         'domain': ','.join(domains)
+    }
+
+    headers = {
+        'X-Mashape-Key': secrets.get('api-keys', 'domainr_mashape_api_key')
     }
 
     bad_codes = 0
 
     while True:
-        r = requests.get(base + 'status', params=payload)
+        r = requests.get(base + 'status', params=payload, headers=headers)
 
         # temporarily allow 504 while Domainr fixes issues
         if r.status_code == 504:
