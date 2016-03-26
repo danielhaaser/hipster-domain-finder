@@ -6,9 +6,9 @@ from time import sleep
 import logging
 
 config = SafeConfigParser()
-secrets = SafeConfigParser()
+environment = SafeConfigParser()
 config.read('config.ini')
-secrets.read('secrets.ini')
+environment.read('environment.ini')
 logger = logging.getLogger(__name__)
 
 class NetworkError(RuntimeError):
@@ -50,7 +50,7 @@ def status(domains):
     }
 
     headers = {
-        'X-Mashape-Key': secrets.get('api-keys', 'domainr_mashape_api_key')
+        'X-Mashape-Key': environment.get('api-keys', 'domainr_mashape_api_key')
     }
 
     bad_codes = 0
