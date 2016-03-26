@@ -3,7 +3,10 @@ from bottle import route, run, template, static_file, redirect
 from pymongo import MongoClient
 
 config = SafeConfigParser()
+environment = SafeConfigParser()
 config.read('config.ini')
+environment.read('environment.ini')
+development = environment.getboolean('environment', 'development')
 db = MongoClient()[config.get('mongodb', 'db_name')]
 register_count = 0
 
@@ -61,7 +64,10 @@ def static(fn):
     return static_file(fn, root='static')
 
 def main():
-    run(host='localhost', port=3000)
+    if development:
+        run(host='localhost', port=3000)
+    else:
+        run(host='0.0.0.0', port=80)
 
 if __name__ == '__main__':
     main()
