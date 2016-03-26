@@ -12,8 +12,9 @@ register_count = 0
 
 @route('/')
 def index():
-    domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'})
-                .sort('length').limit(30) ]
+    # domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'}).sort('length').limit(30) ]
+
+    domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'}).limit(30) ]
 
     purchased = [ d['domain'] for d in
                   db.domains.find({'purchased_this_week': True}) ]
