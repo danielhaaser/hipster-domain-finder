@@ -23,8 +23,8 @@ def update_domain(domain, status):
     elif 'writeError' in operation:
         logger.error('Update error: %s' + operation['writeError']['errmsg'])
 
-    else:
-        logger.debug('Update success')
+    # else:
+        # logger.debug('Update success')
 
 def update_all():
     logger.info('Updating all domains')
@@ -38,7 +38,6 @@ def update_all():
             break
 
         for status in domains.status(bundle):
-            logger.debug('Updating %s to %s', status['domain'], status['summary'])
             update_domain(status['domain'], status['summary'])
 
     logger.info('Finished updating all domains')
