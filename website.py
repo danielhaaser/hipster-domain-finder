@@ -1,6 +1,7 @@
 from configparser import SafeConfigParser
 from bottle import route, run, template, static_file, redirect
 from pymongo import MongoClient
+from random import randint
 
 config = SafeConfigParser()
 environment = SafeConfigParser()
@@ -12,9 +13,15 @@ register_count = 0
 
 @route('/')
 def index():
-    # domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'}).sort('length').limit(30) ]
 
-    domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'}).limit(30) ]
+    # probably this is inefficient and slow, but oh well
+    all_inactive_domains_cursor = db.domains.find({'status': 'inactive'}).limit(-1)
+    count = all_inactive_domains_cursor.count()
+    domains = []
+
+    for x in range(0, 30):
+        domain = all_inactive_domains_cursor[randint(0, count)]
+        domains.append(domain['domain'])
 
     purchased = [ d['domain'] for d in
                   db.domains.find({'purchased_this_week': True}) ]
