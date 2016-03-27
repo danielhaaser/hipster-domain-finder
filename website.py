@@ -2,6 +2,7 @@ from configparser import SafeConfigParser
 from bottle import route, run, template, static_file, redirect
 from pymongo import MongoClient
 from random import randint
+from cherrypy import wsgiserver
 
 config = SafeConfigParser()
 environment = SafeConfigParser()
@@ -73,9 +74,9 @@ def static(fn):
 
 def main():
     if development:
-        run(host='localhost', port=3000)
+        run(host='localhost', port=3000, server="cherrypy")
     else:
-        run(host='0.0.0.0', port=80)
+        run(host='0.0.0.0', port=80, server="cherrypy")
 
 if __name__ == '__main__':
     main()
