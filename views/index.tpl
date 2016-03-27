@@ -30,7 +30,7 @@
                 <a href="/{{page - 1}}" class="side">Previous</a>
             % end
         </nav>
-
+<!-- 
         <section class="mailing">
             Receive a Hipster Domain in your inbox every Monday.
             <form method='get' action='http://mailing.bram.gg/join/hdf'>
@@ -40,7 +40,7 @@
             </form>
         </section>
 
-        <section class="purchased">
+ -->        <section class="purchased">
             {{len(purchased)}} Hipster Domains purchased this week.
             <br>
             {{', '.join(purchased)}}
