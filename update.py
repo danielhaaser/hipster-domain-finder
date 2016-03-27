@@ -3,6 +3,8 @@ from configparser import SafeConfigParser
 from pymongo import MongoClient
 import logging
 from datetime import datetime, timedelta
+import schedule
+import time
 
 config = SafeConfigParser()
 config.read('config.ini')
@@ -67,6 +69,11 @@ def mark_purchased():
 
     logger.info('Finished marking domains as purchased')
 
+def daily_update():
+    logger.info('Running daily update')
+    update_all()
+    mark_purchased()
+
 def main():
     logging.basicConfig(
         filename='update.log',
@@ -74,8 +81,12 @@ def main():
         level=logging.DEBUG
     )
 
-    update_all()
-    mark_purchased()
+    schedule.every().day.at("04:00").do(daily_update)
+
+    #check once a minute if it's time to run the daily update
+    while True:
+        schedule.run_pending()
+        time.sleep(60) 
 
 if __name__ == '__main__':
     main()
