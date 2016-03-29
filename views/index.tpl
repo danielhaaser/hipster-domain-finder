@@ -4,24 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Hipster Domain Finder - Real word domain hacks</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="/static/normalize.css">
+    <link rel="stylesheet" href="/static/skeleton.css">
     <link rel="stylesheet" href="/static/index.css">
     <link rel="icon" type="image/png" href="/static/logo.png">
 </head>
 <body>
     <div class="wrap">
         <header>
-            <a href="/" class="title">Hipster Domain Finder</a>
+            <img src="/static/logo.png" class="logo" width="376.5" height="279">
             <div class="subtitle">
                 Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.
-                <a href="https://github.com/bramgg/hipster-domain-finder">Read more on GitHub</a>.
+                <a href="https://github.com/djh-/hipster-domain-finder">Read more on GitHub</a>.
             </div>
         </header>
 
-        <main>
+        <main class="container">
+            % i = 0
             % for d in domains:
-                 <a target="_blank" href="/register/{{d}}" class="domain" data-opened="false">{{d}}</a>
+                % if i % 2 == 0:
+                    <div class="row">
+                % end
+                        <a target="_blank" href="/register/{{d}}" class="domain six columns" data-opened="false">{{d}}</a>
+                % if i % 2 != 0:
+                    </div>
+                % end
+                % i += 1
             % end
-        </main>
+        </main> 
 
         <nav>
             <a href="/{{page + 1}}" class="side">Next</a>
@@ -47,9 +57,14 @@
         </section>
 
         <footer>
-            Portland made, <a href="https://domainr.com/">Domainr</a> powered.
+            Uses <a href="https://domainr.com/">Domainr</a> to check domain availability.
+            <br>
+            The logo was made with  <a href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.
             <br><br>
-            By <a href="http://www.bram.gg/">Bram Hoskin</a>.
+            Made by <a href="http://www.bram.gg/">Bram Hoskin</a> in Portland.
+            <br>
+            Rehosted and rebranded by <a href="http://daniel.fail">Daniel Haaser</a>.
+            
         </footer>
     </div>
 </body>

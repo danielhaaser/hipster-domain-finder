@@ -22,8 +22,12 @@ a {
     display: none;
 }
 
+.logo {
+    display: center;
+}
+
 .wrap {
-    width: 500px;
+    width: 800px;
     max-width: 100%;
     min-height: 100%;
     margin: 0 auto;
