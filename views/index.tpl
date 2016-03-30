@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="/static/normalize.css">
     <link rel="stylesheet" href="/static/skeleton.css">
-    <link rel="stylesheet" href="/static/index2.css">
+    <link rel="stylesheet" href="/static/index.css">
     <link rel="stylesheet" href="/static/flex.css">
     <link rel="icon" type="/image/png" href="/static/logo.png">
 
@@ -39,7 +39,7 @@
 <body>
     <div class="container main">
 
-      <div class="row bgcolor">
+      <div class="row">
         <header class="four columns mainleftcol textcenter flex flexcol justify-w-space">
             <div>
               <img src="/static/logo.png" class="logo">
@@ -65,7 +65,7 @@
                     % from random import randint
                     % random_image = str(randint(1, 14)) + '.png'
                     % random_image_path = '/static/icons/' + random_image
-                    <a target="_blank" href="/register/{{d}}" class="domain six columns alpha" data-opened="false"> <img width="15" height="15" src="{{random_image_path}}"/>{{d}}</a>
+                    <a target="_blank" href="/register/{{d}}" class="domain six columns alpha" data-opened="false"> <img class="domainicon" src="{{random_image_path}}"/><p class="domaintext">{{d}}</p></a>
                 % if i % 2 != 0:
                     </div>
                 % end
