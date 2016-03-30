@@ -1,0 +1,117 @@
+
+/* For complete properties and values, see https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+
+
+/*===  COMMON PARENT CONTAINER PROPERTIES  ===*/
+
+/* display - add flexbox  */
+
+.flex {
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+/* flex-direction - use to specify the main axis or direction of flex, i.e. specifying rows or columns */
+
+.flexrow { /* DEFAULT */
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.flexcol {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.flexcol-mobile {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+}
+
+/* justify-content - use to align the main axis, example: to horizontally align elements in a row */
+
+.justify-start {  /* DEFAULT */
+	justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.justify-center {
+	justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.justify-w-space {
+	justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.justify-w-space-around {
+	justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+/* align-items - use to align the cross axis, example: to vertically align elements in a row */
+
+.align-start {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+
+/*===  COMMON CHILD CONTAINER RULES  ===*/
+
+/* flex - prioritize (or enlarge) the size of a child compared to other children */
+
+.priority-flex-child {
+  flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+}
+
+/* flex - 2x enlarge the size of a child compared to other children */
+
+.double-flex-child {
+  flex: 2 0 auto;
+  -webkit-flex: 2 0 auto;
+  -ms-flex: 2 0 auto;
+}
+
+/* flex - children are 50% wide */
+
+.half-flex-child {
+  flex: 1 0 50%;
+  -webkit-flex: 1 0 50%;
+  -ms-flex: 1 0 50%;
+}
+
+@media (max-width: 768px) {
+
+	.half-flex-child-mobile {
+	  flex: 0 1 auto;
+	  -webkit-flex: 0 0 auto;
+	  -ms-flex: 0 0 auto;
+	}
+
+}
+
+
+
