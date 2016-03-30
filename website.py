@@ -34,6 +34,10 @@ def index():
         purchased=purchased
     )
 
+@route('/about')
+def about():
+    return template('about')
+
 @route('/<page:re:\d+>')
 def page(page):
     index = int(page) - 1

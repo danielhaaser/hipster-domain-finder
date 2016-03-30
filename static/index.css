@@ -179,6 +179,14 @@ main .domain:hover {
   vertical-align: middle;
 }
 
+.aboutcontent {
+	padding-left: 20px;
+}
+
+.aboutcontent a {
+	text-decoration: underline;
+}
+
 nav {
 
 }

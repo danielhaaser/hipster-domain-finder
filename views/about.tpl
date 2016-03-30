@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags  -->
 
-    <title>Hipster Domains - Real word domain hacks</title>
+    <title>About | Hipster Domains</title>
 
     <meta name="description" content="Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.">
 
@@ -46,7 +46,7 @@
               <div class="sidebar">
                 <div class="subtitle">
                     <p>Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.</p>
-                    <!-- <a href="https://github.com/djh-/hipster-domain-finder">Read more on GitHub</a>. -->
+                    
                     <a class="button" href="/">Refresh</a>
                     <!--<img src="../static/hipimage.jpeg" class="hipimage">-->	               
                 </div>
@@ -57,54 +57,16 @@
         </header>
 
         <main class="eight columns mainrightcol">
-            % i = 0
-            % for d in domains:
-                % if i % 2 == 0:
-                    <div class="row custom">
-                % end
-                    % from random import randint
-                    % random_image = str(randint(1, 14)) + '.png'
-                    % random_image_path = '/static/icons/' + random_image
-                    <a target="_blank" href="/register/{{d}}" class="domain six columns alpha" data-opened="false"> <img class="domainicon" src="{{random_image_path}}"/><p class="domaintext">{{d}}</p></a>
-                % if i % 2 != 0:
-                    </div>
-                % end
-                % i += 1
-            % end
+        	<br>
+        	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">See it on GitHub</a>.</p>
+        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="http://www.bram.gg/">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.
+        	</p>
         </main> 
       </div>
 
       <div class="row textcenter mobilerefreshbtn mt3">
         <a class="button" href="#">the most hip</a>
       </div>
-
-<!-- 
-        <section class="mailing">
-            Receive a Hipster Domain in your inbox every Monday.
-            <form method='get' action='http://mailing.bram.gg/join/hdf'>
-                <input type="email" name="email" placeholder="you@example.com">
-                <br>
-                <input type="submit" value="Yes please!">
-            </form>
-        </section>
-
- -->    
-        <!-- <section class="purchased">
-            {{len(purchased)}} Hipster Domains purchased this week.
-            <br>
-            {{', '.join(purchased)}}
-        </section>
-
-        <footer>
-            Uses <a href="https://domainr.com/">Domainr</a> to check domain availability.
-            <br>
-            The logo was made with  <a href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.
-            <br><br>
-            Made by <a href="http://www.bram.gg/">Bram Hoskin</a> in Portland.
-            <br>
-            Rehosted and rebranded by <a href="http://daniel.fail">Daniel Haaser</a>.
-            
-        </footer> -->
 
     </div>
 
