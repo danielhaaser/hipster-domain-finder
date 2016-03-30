@@ -20,7 +20,7 @@ def index():
 
     # this is inefficient and slow, but oh well
     for x in range(0, 20):
-        random = randint(0, count)
+        random = randint(0, count - 1)
         domain = db.domains.find({'status': 'inactive'}).skip(random).limit(1).next()
         domains.append(domain['domain'])
 
