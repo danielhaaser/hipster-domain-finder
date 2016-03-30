@@ -7,12 +7,12 @@
 
     <title>About | Hipster Domains</title>
 
-    <meta name="description" content="Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.">
+    <meta name="description" content="Dot-com is so mainstream.  Find real word domain hacks with Hipster Domains.">
 
     <meta property="og:title" content="Hipster Domains - Real word domain hacks" />
     <meta property="og:site_name" content="Hipster Domains" />
     <meta property="og:url" content="http://hipster.domains" />
-    <meta property="og:description" content="Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder." />
+    <meta property="og:description" content="Dot-com is so mainstream, find real word domain hacks with Hipster Domains." />
     <meta property="fb:app_id" content="" />
     <meta property="og:image" content="http://hipster.domains/static/logo.png" />
 
@@ -45,7 +45,7 @@
               <a href="/"><img src="/static/logo.png" class="logo"></a>
               <div class="sidebar">
                 <div class="subtitle">
-                    <p>Dot-com is so mainstream, find real word domain hacks with Hipster Domains.</p>
+                    <p>Dot-com is so mainstream. Find real word domain hacks with Hipster Domains.</p>
                     
                     <a class="button" href="/">Refresh</a>
                     <!--<img src="../static/hipimage.jpeg" class="hipimage">-->	               
