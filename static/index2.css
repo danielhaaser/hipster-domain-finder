@@ -5,7 +5,7 @@ html, body {
 body {
     min-width: 320px;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: 'Inconsolata','Courier', monospace;
     background-color: #fff;
 }
@@ -122,9 +122,9 @@ header .subtitle {
 }
 
 header .subtitle p {
-  width: 84%;
+  width: 90%;
   margin: 0 auto 30px auto;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 550px) {
@@ -141,7 +141,7 @@ input[type="button"] {
   font-family: 'Inconsolata','Courier', monospace;
   border: 1px solid #000;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .button:hover,
@@ -160,10 +160,10 @@ input[type="button"]:focus {
 
 main .domain {
     display: block;
-    height: 50px;
+    height: 90px;
     border-bottom: 1px solid #f7f7f7;
     margin-top: -1px;
-    line-height: 50px;
+    line-height: 90px;
     color: inherit;
     text-align: center;
 }
