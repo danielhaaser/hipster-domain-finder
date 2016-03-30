@@ -45,7 +45,7 @@
               <a href="/"><img src="/static/logo.png" class="logo"></a>
               <div class="sidebar">
                 <div class="subtitle">
-                    <p>Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.</p>
+                    <p>Dot-com is so mainstream, find real word domain hacks with Hipster Domains.</p>
                     
                     <a class="button" href="/">Refresh</a>
                     <!--<img src="../static/hipimage.jpeg" class="hipimage">-->	               
