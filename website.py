@@ -15,13 +15,13 @@ register_count = 0
 @route('/')
 def index():
 
-    # this is inefficient and slow, but oh well
-    all_inactive_domains_cursor = db.domains.find({'status': 'inactive'}).limit(-1)
-    count = all_inactive_domains_cursor.count()
+    count = db.domains.find({'status': 'inactive'}).limit(-1).count()
     domains = []
 
+    # this is inefficient and slow, but oh well
     for x in range(0, 20):
-        domain = all_inactive_domains_cursor[randint(0, count)]
+        random = randint(0, count)
+        domain = db.domains.find({'status': 'inactive'}).skip(random).limit(1).next()
         domains.append(domain['domain'])
 
     purchased = [ d['domain'] for d in
