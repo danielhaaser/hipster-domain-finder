@@ -15,12 +15,12 @@ register_count = 0
 @route('/')
 def index():
 
-    # probably this is inefficient and slow, but oh well
+    # this is inefficient and slow, but oh well
     all_inactive_domains_cursor = db.domains.find({'status': 'inactive'}).limit(-1)
     count = all_inactive_domains_cursor.count()
     domains = []
 
-    for x in range(0, 30):
+    for x in range(0, 20):
         domain = all_inactive_domains_cursor[randint(0, count)]
         domains.append(domain['domain'])
 
@@ -34,25 +34,26 @@ def index():
         purchased=purchased
     )
 
-@route('/<page:re:\d+>')
-def page(page):
-    index = int(page) - 1
+# returns domains sorted by length
+# @route('/<page:re:\d+>')
+# def page(page):
+#     index = int(page) - 1
 
-    if index < 0:
-        return 'Out of range!'
+#     if index < 0:
+#         return 'Out of range!'
 
-    domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'})
-                .sort('length').skip(index * 30).limit(30) ]
+#     domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'})
+#                 .sort('length').skip(index * 30).limit(30) ]
 
-    purchased = [ d['domain'] for d in
-                  db.domains.find({'purchased_this_week': True}) ]
+#     purchased = [ d['domain'] for d in
+#                   db.domains.find({'purchased_this_week': True}) ]
 
-    return template(
-        'index',
-        page=int(page),
-        domains=domains,
-        purchased=purchased
-    )
+#     return template(
+#         'index',
+#         page=int(page),
+#         domains=domains,
+#         purchased=purchased
+#     )
 
 @route('/register/:domain')
 def register(domain):
