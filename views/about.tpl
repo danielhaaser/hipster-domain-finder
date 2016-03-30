@@ -59,7 +59,7 @@
         <main class="eight columns mainrightcol">
         	<br>
         	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">See it on GitHub</a>.</p>
-        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="http://www.bram.gg/">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.
+        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.
         	</p>
         </main> 
       </div>
