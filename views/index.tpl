@@ -37,7 +37,10 @@
                 % if i % 2 == 0:
                     <div class="row">
                 % end
-                        <a target="_blank" href="/register/{{d}}" class="domain six columns" data-opened="false">{{d}}</a>
+                    % from random import randint
+                    % random_image = str(randint(1, 14)) + '.png'
+                    % random_image_path = '/static/icons/' + random_image
+                    <a target="_blank" href="/register/{{d}}" class="domain six columns" data-opened="false"> <img width="15" height="15" src="{{random_image_path}}"/>{{d}}</a>
                 % if i % 2 != 0:
                     </div>
                 % end

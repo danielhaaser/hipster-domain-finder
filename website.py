@@ -72,6 +72,10 @@ def register(domain):
 def static(fn):
     return static_file(fn, root='static')
 
+@route('/static/icons/<fn>')
+def icons(fn):
+    return static_file(fn, root='static/icons')
+
 def main():
     if development:
         run(host='localhost', port=3000, server="cherrypy")
