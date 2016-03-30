@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags  -->
+
     <title>Hipster Domain Finder - Real word domain hacks</title>
+
+    <meta name="description" content="Browse hip domains">
+
+    <meta property="og:title" content="Hipster Domains - Real word domain hacks" />
+    <meta property="og:site_name" content="Hipster Domains" />
+    <meta property="og:url" content="http://hipster.domains" />
+    <meta property="og:description" content="Browse hip domains" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="hipster.domains/static/logo.png" />
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="/static/normalize.css">
     <link rel="stylesheet" href="/static/skeleton.css">
