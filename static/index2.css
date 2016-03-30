@@ -5,8 +5,8 @@ html, body {
 body {
     min-width: 320px;
     margin: 0;
-    font-size: 1.3rem;
-    font-family: 'Courier', sans-serif;
+    font-size: 1.4rem;
+    font-family: 'Inconsolata','Courier', monospace;
     background-color: #fff;
 }
 
@@ -122,9 +122,9 @@ header .subtitle {
 }
 
 header .subtitle p {
-  width: 90%;
+  width: 84%;
   margin: 0 auto 30px auto;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 550px) {
@@ -138,7 +138,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata','Courier', monospace;
   border: 1px solid #000;
   color: #000;
   font-size: 1.1rem;
