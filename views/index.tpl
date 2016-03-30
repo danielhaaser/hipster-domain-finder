@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags  -->
 
@@ -14,13 +14,15 @@
     <meta property="og:url" content="http://hipster.domains" />
     <meta property="og:description" content="Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder." />
     <meta property="fb:app_id" content="" />
-    <meta property="og:image" content="hipster.domains/static/logo.png" />
+    <meta property="og:image" content="http://hipster.domains/static/logo.png" />
 
+    <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="/static/normalize.css">
     <link rel="stylesheet" href="/static/skeleton.css">
-    <link rel="stylesheet" href="/static/index.css">
-    <link rel="icon" type="image/png" href="/static/logo.png">
+    <link rel="stylesheet" href="/static/index2.css">
+    <link rel="stylesheet" href="/static/flex.css">
+    <link rel="icon" type="/image/png" href="/static/logo.png">
 
     <!-- Google Analytics -->
     <script>
@@ -35,36 +37,44 @@
 
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <img src="/static/logo.png" class="logo" width="376.5" height="279">
-            <div class="subtitle">
-                Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.
-                <a href="https://github.com/djh-/hipster-domain-finder">Read more on GitHub</a>.
-            </div>
+    <div class="container main">
+
+      <div class="row bgcolor">
+        <header class="four columns mainleftcol textcenter flex flexcol justify-w-space">
+            <div>
+              <img src="/static/logo.png" class="logo">
+              <div class="sidebar">
+                <div class="subtitle">
+                    <p>Dot-com is so mainstream, find real word domain hacks with Hipster Domain Finder.</p>
+                    <!-- <a href="https://github.com/djh-/hipster-domain-finder">Read more on GitHub</a>. -->
+                    <a class="button" href="/">Refresh</a>
+                    <!--<img src="../static/hipimage.jpeg" class="hipimage">-->	               
+                </div>
+
+              </div>
+          	</div>
+          	<p class="mb05"><a>about</a></p>
         </header>
 
-        <main class="container">
+        <main class="eight columns mainrightcol">
             % i = 0
             % for d in domains:
                 % if i % 2 == 0:
-                    <div class="row">
+                    <div class="row custom">
                 % end
-                        <a target="_blank" href="/register/{{d}}" class="domain six columns" data-opened="false">{{d}}</a>
+                    <a target="_blank" href="/register/{{d}}" class="domain six columns alpha" data-opened="false">{{d}}</a>
                 % if i % 2 != 0:
                     </div>
                 % end
                 % i += 1
             % end
         </main> 
+      </div>
 
-        <nav>
-            <a href="/{{page + 1}}" class="side">Next</a>
+      <div class="row textcenter mobilerefreshbtn mt3">
+        <a class="button" href="#">the most hip</a>
+      </div>
 
-            % if page > 1:
-                <a href="/{{page - 1}}" class="side">Previous</a>
-            % end
-        </nav>
 <!-- 
         <section class="mailing">
             Receive a Hipster Domain in your inbox every Monday.
@@ -75,7 +85,8 @@
             </form>
         </section>
 
- -->        <section class="purchased">
+ -->    
+        <!-- <section class="purchased">
             {{len(purchased)}} Hipster Domains purchased this week.
             <br>
             {{', '.join(purchased)}}
@@ -90,7 +101,9 @@
             <br>
             Rehosted and rebranded by <a href="http://daniel.fail">Daniel Haaser</a>.
             
-        </footer>
+        </footer> -->
+
     </div>
+
 </body>
 </html>

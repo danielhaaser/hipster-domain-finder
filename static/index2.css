@@ -5,7 +5,8 @@ html, body {
 body {
     min-width: 320px;
     margin: 0;
-    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-size: 1.3rem;
+    font-family: 'Courier', sans-serif;
     background-color: #fff;
 }
 
@@ -13,9 +14,11 @@ body {
     color: #000;
 }
 
-a {
+a, a:focus {
     text-decoration: none;
-    color: #3c67dd;
+    color: #000;
+    outline: none;
+    cursor: pointer;
 }
 
 .textcenter {
@@ -24,6 +27,10 @@ a {
 
 .mt3 {
 	margin-top: 30px;
+}
+
+.mb05 {
+	margin-bottom: 5px;
 }
 
 
@@ -45,12 +52,19 @@ a {
 	padding: 0 20px;
 	height: 100%;
   position: fixed;
+  border-right: 2px solid #F7F7F7;
+  overflow: auto;
+}
+
+.mainleftcol::-webkit-scrollbar { 
+    display: none; 
 }
 
 .mainrightcol {
-	margin-left: 34.6666666667%;
+	margin-left: 30.6666666667%;
 }
 
+.main .row > .eight.columns { width: 69.333333%; }
 .row.custom > .six.columns { width: 100%; }
 .row.custom > .column,
 .row.custom > .columns {
@@ -72,19 +86,19 @@ a {
 }
 
 .logo {
-  width: 100%;
-  margin-top: 30px;
+  width: 90%;
+  margin:30px auto 0 auto;
 }
 
 @media (min-width: 950px) {
   .logo {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media (max-width: 550px) {
   .logo {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -109,16 +123,8 @@ header .subtitle {
 
 header .subtitle p {
   width: 90%;
-  margin: 0 auto 20px auto;
-}
-
-div#preloaded-images {
-   position: absolute;
-   overflow: hidden;
-   left: -9999px; 
-   top: -9999px;
-   height: 1px;
-   width: 1px;
+  margin: 0 auto 30px auto;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 550px) {
@@ -135,6 +141,7 @@ input[type="button"] {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #000;
   color: #000;
+  font-size: 1.1rem;
 }
 
 .button:hover,
