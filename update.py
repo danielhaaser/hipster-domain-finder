@@ -25,9 +25,6 @@ def update_domain(domain, status):
     elif 'writeError' in operation:
         logger.error('Update error: %s' + operation['writeError']['errmsg'])
 
-    # else:
-        # logger.debug('Update success')
-
 def update_all():
     logger.info('Updating all domains')
 

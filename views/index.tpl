@@ -46,7 +46,6 @@
               <div class="sidebar">
                 <div class="subtitle">
                     <p>Dot-com is so mainstream.  Find real word domain hacks with Hipster Domains.</p>
-                    <!-- <a href="https://github.com/djh-/hipster-domain-finder">Read more on GitHub</a>. -->
                     <a class="button" href="/">Refresh</a>
                     <!--<img src="../static/hipimage.jpeg" class="hipimage">-->	               
                 </div>
@@ -77,34 +76,6 @@
       <div class="row textcenter mobilerefreshbtn mt3">
         <a class="button" href="#">the most hip</a>
       </div>
-
-<!-- 
-        <section class="mailing">
-            Receive a Hipster Domain in your inbox every Monday.
-            <form method='get' action='http://mailing.bram.gg/join/hdf'>
-                <input type="email" name="email" placeholder="you@example.com">
-                <br>
-                <input type="submit" value="Yes please!">
-            </form>
-        </section>
-
- -->    
-        <!-- <section class="purchased">
-            {{len(purchased)}} Hipster Domains purchased this week.
-            <br>
-            {{', '.join(purchased)}}
-        </section>
-
-        <footer>
-            Uses <a href="https://domainr.com/">Domainr</a> to check domain availability.
-            <br>
-            The logo was made with  <a href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.
-            <br><br>
-            Made by <a href="http://www.bram.gg/">Bram Hoskin</a> in Portland.
-            <br>
-            Rehosted and rebranded by <a href="http://daniel.fail">Daniel Haaser</a>.
-            
-        </footer> -->
 
     </div>
 
