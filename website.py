@@ -24,40 +24,14 @@ def index():
         domain = db.domains.find({'status': 'inactive'}).skip(random).limit(1).next()
         domains.append(domain['domain'])
 
-    purchased = [ d['domain'] for d in
-                  db.domains.find({'purchased_this_week': True}) ]
-
-    return template(
-        'index',
-        page=1,
-        domains=domains,
-        purchased=purchased
-    )
+    return template('index', page=1, domains=domains)
 
 @route('/about')
 def about():
-    return template('about')
+    purchased = [ d['domain'] for d in
+                  db.domains.find({'purchased_this_week': True}) ]
 
-# returns domains sorted by length
-# @route('/<page:re:\d+>')
-# def page(page):
-#     index = int(page) - 1
-
-#     if index < 0:
-#         return 'Out of range!'
-
-#     domains = [ d['domain'] for d in db.domains.find({'status': 'inactive'})
-#                 .sort('length').skip(index * 30).limit(30) ]
-
-#     purchased = [ d['domain'] for d in
-#                   db.domains.find({'purchased_this_week': True}) ]
-
-#     return template(
-#         'index',
-#         page=int(page),
-#         domains=domains,
-#         purchased=purchased
-#     )
+    return template('about', purchased=purchased)
 
 @route('/register/:domain')
 def register(domain):

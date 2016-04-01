@@ -38,7 +38,6 @@
 </head>
 <body>
     <div class="container main">
-
       <div class="row">
         <header class="four columns mainleftcol textcenter flex flexcol justify-w-space">
             <div>
@@ -58,16 +57,15 @@
 
         <main class="eight columns mainrightcol">
         	<br>
-        	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">See it on GitHub</a>.</p>
+        	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">Peep it on GitHub</a>.</p>
         	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.
+            <br><br>
+             {{len(purchased)}} Hipster Domains purchased this week.
+                <br>
+                {{', '.join(purchased)}}
         	</p>
         </main> 
       </div>
-
-      <div class="row textcenter mobilerefreshbtn mt3">
-        <a class="button" href="#">the most hip</a>
-      </div>
-
     </div>
 
 </body>
