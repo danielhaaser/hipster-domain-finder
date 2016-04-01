@@ -58,11 +58,20 @@
         <main class="eight columns mainrightcol">
         	<br>
         	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">Peep it on GitHub</a>.</p>
-        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.
-            <br><br>
-             {{len(purchased)}} Hipster Domains purchased this week.
-                <br>
-                {{', '.join(purchased)}}
+
+        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.</p>
+
+            <p class="aboutcontent">
+             {{len(purchased)}} hipster domains purchased this week.
+                <span class="purchased-domains">
+                % if len(purchased) > 0:
+                    <br>
+                    % for p in purchased[:-1]:
+                        <a target="_blank" href="http://{{p}}">{{p}}</a>, 
+                    % end
+                    <a target="_blank" href="http://{{purchased[-1]}}">{{purchased[-1]}}</a>
+                % end
+                </span>
         	</p>
         </main> 
       </div>
