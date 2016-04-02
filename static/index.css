@@ -22,42 +22,42 @@ a, a:focus {
 }
 
 .textcenter {
-	text-align: center;
+  text-align: center;
 }
 
 .mt3 {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .mb05 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 550px) {
 
 .mobileabout {
-	display: none;
+  display: none;
 }
 
 .container.main {
-	width: 100%;
-	max-width: none;
+  width: 100%;
+  max-width: none;
 }
 
 .mainleftcol {
-	padding: 0 20px;
-	height: 100%;
+  padding: 0 20px;
+  height: 100%;
   position: fixed;
   border-right: 2px solid #F7F7F7;
   overflow: auto;
 }
 
 .mainleftcol::-webkit-scrollbar { 
-    display: none; 
+  display: none; 
 }
 
 .mainrightcol {
-	margin-left: 30.6666666667%;
+  margin-left: 30.6666666667%;
 }
 
 .main .row > .eight.columns { width: 69.333333%; }
@@ -69,8 +69,8 @@ a, a:focus {
 }
 
 .hipimage {
-	width: 80%;
-	margin-top: 30px;
+  width: 80%;
+  margin-top: 30px;
 }
 
 @media (min-width: 850px) {
@@ -97,9 +97,9 @@ a, a:focus {
     width: 40%;
   }
 
-	.desktopabout {
-		display: none;
-	}
+  .desktopabout {
+    display: none;
+  }
 }
 
 header .title {
@@ -118,7 +118,7 @@ header .sidebar {
 }
 
 header .subtitle {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 header .subtitle p {
@@ -174,28 +174,24 @@ main .domain:hover {
 }
 
 .domainicon {
-	width: 20px;
-	margin-right: 8px;
+  width: 20px;
+  margin-right: 8px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .domaintext {
-	margin-bottom: 0;
-	display: inline-block;
+  margin-bottom: 0;
+  display: inline-block;
   vertical-align: middle;
 }
 
 .aboutcontent {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 .aboutcontent a {
-	text-decoration: underline;
-}
-
-nav {
-
+  text-decoration: underline;
 }
 
 nav .side {

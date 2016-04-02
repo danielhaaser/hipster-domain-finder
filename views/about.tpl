@@ -51,15 +51,15 @@
                 </div>
 
               </div>
-          	</div>
-          	<p class="desktopabout mb05"><a href="/about">about</a></p>
+            </div>
+            <p class="desktopabout mb05"><a href="/about">about</a></p>
         </header>
 
         <main class="eight columns mainrightcol">
-        	<br>
-        	<p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">Peep it on GitHub</a>.</p>
+          <br>
+          <p class="aboutcontent">This project is open-source. <a target="_blank" href="https://github.com/djh-/hipster-domain-finder">Peep it on GitHub</a>.</p>
 
-        	<p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.</p>
+          <p class="aboutcontent">Uses <a target="_blank" href="https://domainr.com/">Domainr</a> to check domain availability.<br>The logo was made with  <a target="_blank" href="http://hipsterlogogenerator.com/">Hipster Logo Generator</a>.<br>Made by <a target="_blank" href="https://github.com/bramgg">Bram Hoskin</a> in Portland.<br>Rehosted and rebranded by <a target="_blank" href="http://daniel.fail">Daniel Haaser</a> and <a target="_blank" href="http://twitter.com/drewbots">@drewbots</a>.</p>
 
             <p class="aboutcontent">
              {{len(purchased)}} hipster domains purchased this week.
@@ -72,8 +72,8 @@
                     <a target="_blank" href="http://{{purchased[-1]}}">{{purchased[-1]}}</a>
                 % end
                 </span>
-        	  </p>
-        	  <p class="mobileabout textcenter mb05"><a href="/about">about</a></p>
+            </p>
+            <p class="mobileabout textcenter mb05"><a href="/about">about</a></p>
         </main> 
       </div>
     </div>

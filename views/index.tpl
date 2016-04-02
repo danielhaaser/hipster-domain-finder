@@ -51,8 +51,8 @@
                 </div>
 
               </div>
-          	</div>
-          	<p class="desktopabout mb05"><a href="/about">about</a></p>
+            </div>
+            <p class="desktopabout mb05"><a href="/about">about</a></p>
         </header>
 
         <main class="eight columns mainrightcol">
