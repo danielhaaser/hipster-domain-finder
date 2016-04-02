@@ -52,7 +52,7 @@
 
               </div>
           	</div>
-          	<p class="mb05"><a href="/about">about</a></p>
+          	<p class="desktopabout mb05"><a href="/about">about</a></p>
         </header>
 
         <main class="eight columns mainrightcol">
@@ -72,7 +72,8 @@
                     <a target="_blank" href="http://{{purchased[-1]}}">{{purchased[-1]}}</a>
                 % end
                 </span>
-        	</p>
+        	  </p>
+        	  <p class="mobileabout textcenter mb05"><a href="/about">about</a></p>
         </main> 
       </div>
     </div>

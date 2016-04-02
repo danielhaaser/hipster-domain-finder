@@ -33,8 +33,11 @@ a, a:focus {
 	margin-bottom: 5px;
 }
 
-
 @media (min-width: 550px) {
+
+.mobileabout {
+	display: none;
+}
 
 .container.main {
 	width: 100%;
@@ -93,6 +96,10 @@ a, a:focus {
   .logo {
     width: 40%;
   }
+
+	.desktopabout {
+		display: none;
+	}
 }
 
 header .title {
@@ -238,10 +245,6 @@ nav .side:hover {
     text-align: center;
     font-size: 12px;
     color: #f5f5f5;
-}
-
-.purchased-domains {
-  font-size: 1.4rem;
 }
 
 footer {

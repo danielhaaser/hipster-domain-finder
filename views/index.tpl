@@ -52,7 +52,7 @@
 
               </div>
           	</div>
-          	<p class="mb05"><a href="/about">about</a></p>
+          	<p class="desktopabout mb05"><a href="/about">about</a></p>
         </header>
 
         <main class="eight columns mainrightcol">
@@ -76,7 +76,7 @@
       <div class="row textcenter mobilerefreshbtn mt3">
         <a class="button" href="#">the most hip</a>
       </div>
-
+      <p class="mobileabout textcenter mb05"><a href="/about">about</a></p>
     </div>
 
 </body>
