@@ -88,13 +88,13 @@ a, a:focus {
 
 @media (min-width: 950px) {
   .logo {
-    width: 50%;
+    width: 62%;
   }
 }
 
 @media (max-width: 550px) {
   .logo {
-    width: 40%;
+    width: 54%;
   }
 
   .desktopabout {
@@ -111,10 +111,6 @@ header .title {
   font-size: 30px;
   color: white;
   text-shadow: 2px 2px 2px #282828;
-}
-
-header .sidebar {
-  padding: 20px 0 0 0px;
 }
 
 header .subtitle {
@@ -175,7 +171,7 @@ main .domain:hover {
 
 .domainicon {
   width: 20px;
-  margin-right: 8px;
+  margin-right: 12px;
   display: inline-block;
   vertical-align: middle;
 }

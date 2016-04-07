@@ -74,7 +74,7 @@
       </div>
 
       <div class="row textcenter mobilerefreshbtn mt3">
-        <a class="button" href="#">the most hip</a>
+        <a class="button" href="#">Refresh</a>
       </div>
       <p class="mobileabout textcenter mb05"><a href="/about">about</a></p>
     </div>
