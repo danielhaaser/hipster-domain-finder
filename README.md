@@ -17,11 +17,12 @@ Requirements for Hipster Domains are Python 3 and MongoDB. Environment managemen
 ### Installation
 
 1. Install Python 3. This can be done with [Homebrew][homebrew] on OSX or `apt-get` on Ubuntu.
-2. Install virtualenv with `pip install virtualenv`.
-3. Create a virtual environment within the project directory. Navigate to the project directory, and execute `virtualenv -p python3 venv`. This will create a virtual environment named *venv*, configured to use Python 3.
-4. Activate the virtual environment by running `source venv/bin/activate`.
-5. Install the project dependencies with `pip install -r requirements.txt`.
-6. [Install MongoDB][mongo_install] and activate it with `mongod`.
+2. Install pip3. This is the Python 3 version of the Python package manager. You can use [Homebrew][homebrew] on OSX or `apt-get` on Ubuntu.
+3. Install virtualenv with `pip3 install virtualenv`.
+4. Create a virtual environment within the project directory. Navigate to the project directory, and execute `virtualenv -p python3 venv`. This will create a virtual environment named *venv*, configured to use Python 3.
+5. Activate the virtual environment by running `source venv/bin/activate`.
+6. Install the project dependencies with `pip install -r requirements.txt`.
+7. [Install MongoDB][mongo_install] and activate it with `mongod`.
 
 
 Hipster Domains is ready to be used locally. Just run
