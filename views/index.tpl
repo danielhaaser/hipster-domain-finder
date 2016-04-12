@@ -62,7 +62,7 @@
                     <div class="row custom">
                 % end
                     % from random import randint
-                    % random_image = str(randint(1, 14)) + '.png'
+                    % random_image = str(randint(1, 16)) + '.svg'
                     % random_image_path = '/static/icons/' + random_image
                     <a target="_blank" href="/register/{{d}}" class="domain six columns alpha" data-opened="false"> <img class="domainicon" src="{{random_image_path}}"/><p class="domaintext">{{d}}</p></a>
                 % if i % 2 != 0:
