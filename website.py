@@ -1,5 +1,5 @@
 from configparser import SafeConfigParser
-from bottle import route, run, template, static_file, redirect
+from bottle import route, run, template, static_file, redirect, error
 from pymongo import MongoClient
 from random import randint
 from cherrypy import wsgiserver
@@ -45,6 +45,10 @@ def static(fn):
 @route('/static/icons/<fn>')
 def icons(fn):
     return static_file(fn, root='static/icons')
+
+@route('/<any_route>')
+def any(any_route):
+    redirect('/')
 
 def main():
     if development:
