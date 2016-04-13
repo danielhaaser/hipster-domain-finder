@@ -36,7 +36,7 @@ def about():
 
 @route('/register/:domain')
 def register(domain):
-    redirect(config.get('register', '101domain').replace('{{d}}', domain))
+    redirect(config.get('register', 'namecheap').replace('{{d}}', domain))
 
 @route('/static/<fn>')
 def static(fn):
