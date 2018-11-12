@@ -6,7 +6,7 @@
 
 Find short & sweet single word domain hacks with Hipster Domains at
 [Hipster.Domains][hd]. All domains listed should be available for
-registration.  Originally created by [Bram Hoskin](https://github.com/bramgg/), now maintained by [Daniel Haaser](https://github.com/djh-).
+registration.  Originally created by [Bram Hoskin](https://github.com/bramgg/), now (somewhat) maintained by [Daniel Haaser](https://github.com/danielhaaser).
 
 ## Development
 
